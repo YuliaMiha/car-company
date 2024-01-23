@@ -1,0 +1,12 @@
+{
+    "presets": [
+      "@babel/preset-react",
+      // other presets
+    ],
+    "plugins": [
+      // other plugins
+      "@babel/plugin-proposal-numeric-separator",
+      "@babel/plugin-proposal-private-property-in-object"
+    ]
+  }
+  
