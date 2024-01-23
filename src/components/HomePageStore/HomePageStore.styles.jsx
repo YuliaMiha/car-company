@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
+// import backgroundImage from '../../images/background-car.webp';
 
 export const HomePageWrapper = styled.div`
   text-align: center;
