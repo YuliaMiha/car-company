@@ -1,25 +1,25 @@
-import { CarsList } from "../components/CarList";
-import { CarsFilter } from "../components/CarFilter";
-import { Loader } from "../components/common/Loader";
-import { Section } from "../components/common/Section";
-import { SectionTitle } from "../components/common/SectionTitle";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { CarsList } from '../components/CarList';
+import { CarsFilter } from '../components/CarFilter';
+import { Loader } from '../components/common/Loader';
+import { Section } from '../components/common/Section';
+import { SectionTitle } from '../components/common/SectionTitle';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   selectCarsItems,
   selectFilterValues,
   selectIsLoading,
-} from "../redux/selectors";
+} from '../redux/selectors';
 import {
   getCarsByMileageThunk,
   getCarsQuantityThunk,
   getCarsThunk,
   getMoreCarsThunk,
-} from "../redux/thunks";
+} from '../redux/thunks';
 
 const CarCatalog = () => {
-  const [selectedMake, setSelectedMake] = useState("");
-  const [selectedPriceRange, setSelectedPriceRange] = useState("");
+  const [selectedMake, setSelectedMake] = useState('');
+  const [selectedPriceRange, setSelectedPriceRange] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [shouldFetchMore, setShouldFetchMore] = useState(false);
   const cars = useSelector(selectCarsItems);
@@ -50,20 +50,20 @@ const CarCatalog = () => {
   }, [dispatch, currentPage, shouldFetchMore]);
 
   const handleLoadMore = () => {
-    setCurrentPage((prevPage) => prevPage + 1);
+    setCurrentPage(prevPage => prevPage + 1);
     setShouldFetchMore(true);
   };
 
-  const handleMakeChange = (value) => {
+  const handleMakeChange = value => {
     setSelectedMake(value);
-    setSelectedPriceRange("");
+    setSelectedPriceRange('');
     setCurrentPage(1);
     setShouldFetchMore(false);
   };
 
-  const handlePriceRangeChange = (value) => {
+  const handlePriceRangeChange = value => {
     setSelectedPriceRange(value);
-    setSelectedMake("");
+    setSelectedMake('');
     setCurrentPage(1);
     setShouldFetchMore(false);
   };
@@ -76,7 +76,7 @@ const CarCatalog = () => {
     <>
       {isLoading && <Loader />}
       <Section>
-        <SectionTitle title="Find a car with this Car Catalog" />
+        <SectionTitle title="Find a car in Catalog" />
         <CarsFilter
           filterValues={filterValues}
           handleMakeChange={handleMakeChange}

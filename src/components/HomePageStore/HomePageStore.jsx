@@ -9,25 +9,16 @@ import {
 export const HomePageContent = () => {
   return (
     <HomePageWrapper>
-      <HomePageTitle>Discover Your Dream Car</HomePageTitle>
+      <HomePageTitle>Сhoose a car for today</HomePageTitle>
       <HomePageText>
-        Car rental has become increasingly popular over the years, offering
-        people the flexibility and convenience of driving a vehicle without the
-        commitments of ownership. Whether you need a car for a weekend getaway,
-        a business trip, or simply to explore a new city, car rental services
-        have you covered.
-      </HomePageText>
-      <HomePageText>
-        With a wide range of car options to choose from, you can select the
-        perfect vehicle to suit your needs and preferences. From compact cars
-        for city adventures to spacious SUVs for family road trips, car rental
-        platforms provide a variety of choices.
-      </HomePageText>
-      <HomePageText>
-        Renting a car also offers the advantage of avoiding the wear and tear on
-        your own vehicle, making it an ideal choice for long journeys. Plus,
-        it's a cost-effective solution for occasional drivers who don't want the
-        ongoing expenses of car ownership.
+        A car makes it possible to keep up, to move around the city comfortably,
+        to raise a person's status in the eyes of his clients or business
+        partners. If you are not yet planning to buy your car or have given the
+        vehicle in for repairs, car rental will come to your aid. Do you need a
+        car for rent? Our site offers to rent a car on the most favorable terms.
+        Our fleet includes modern, reliable vehicles that are regularly
+        inspected and serviced in a timely manner. You can choose the
+        appropriate model by studying the catalog.
       </HomePageText>
       <HomePageButtonWrapper>
         <HomePageLink to="/catalog">Explore Cars</HomePageLink>
