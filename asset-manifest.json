@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/car-company/static/css/main.7cda0caf.css",
+    "main.js": "/car-company/static/js/main.ee77ac0b.js",
+    "static/js/271.2d582e1c.chunk.js": "/car-company/static/js/271.2d582e1c.chunk.js",
+    "static/js/398.b9176706.chunk.js": "/car-company/static/js/398.b9176706.chunk.js",
+    "static/js/811.e1e66106.chunk.js": "/car-company/static/js/811.e1e66106.chunk.js",
+    "static/js/344.cafef8d2.chunk.js": "/car-company/static/js/344.cafef8d2.chunk.js",
+    "static/media/sprite.svg": "/car-company/static/media/sprite.e7d7b9326780cccd0feb7d5aaab24bee.svg",
+    "index.html": "/car-company/index.html",
+    "main.7cda0caf.css.map": "/car-company/static/css/main.7cda0caf.css.map",
+    "main.ee77ac0b.js.map": "/car-company/static/js/main.ee77ac0b.js.map",
+    "271.2d582e1c.chunk.js.map": "/car-company/static/js/271.2d582e1c.chunk.js.map",
+    "398.b9176706.chunk.js.map": "/car-company/static/js/398.b9176706.chunk.js.map",
+    "811.e1e66106.chunk.js.map": "/car-company/static/js/811.e1e66106.chunk.js.map",
+    "344.cafef8d2.chunk.js.map": "/car-company/static/js/344.cafef8d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cda0caf.css",
+    "static/js/main.ee77ac0b.js"
+  ]
+}
