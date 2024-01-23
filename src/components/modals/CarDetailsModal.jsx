@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Modal } from 'components/common/Modal';
+import { Modal } from '../common/Modal';
 import {
   ContentWrapper,
   CarInfoWrapper,

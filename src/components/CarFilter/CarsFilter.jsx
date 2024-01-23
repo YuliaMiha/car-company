@@ -1,5 +1,5 @@
-import { Select } from 'components/common/CustomSelect';
-import React, { useState, useEffect } from 'react';
+import { Select } from "../common/CustomSelect";
+import React, { useState, useEffect } from "react";
 import {
   FilterInputWrapper,
   FilterWrapper,
@@ -11,7 +11,7 @@ import {
   MileageInputWrapper,
   StyledInput,
   FilterMileageWrapper,
-} from './CarsFilter.styled';
+} from "./CarsFilter.styled";
 
 export const CarsFilter = ({
   filterValues,
@@ -19,8 +19,8 @@ export const CarsFilter = ({
   handlePriceRangeChange,
   handleApplyMileageFilter,
 }) => {
-  const [minMileage, setMinMileage] = useState('');
-  const [maxMileage, setMaxMileage] = useState('');
+  const [minMileage, setMinMileage] = useState("");
+  const [maxMileage, setMaxMileage] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const { makes, priceRanges } = filterValues;
@@ -33,11 +33,11 @@ export const CarsFilter = ({
     }
   }, [minMileage, maxMileage]);
 
-  const handleMinMileageChange = event => {
+  const handleMinMileageChange = (event) => {
     setMinMileage(event.target.value);
   };
 
-  const handleMaxMileageChange = event => {
+  const handleMaxMileageChange = (event) => {
     setMaxMileage(event.target.value);
   };
 

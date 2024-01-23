@@ -1,4 +1,4 @@
-import { CarDetailsModal } from 'components/modals';
+import { CarDetailsModal } from '../modals/CarDetailsModal';
 import React, { useState } from 'react';
 import {
   CarImage,
@@ -18,8 +18,8 @@ import {
 } from './CarItem.styled';
 import sprite from '../../images/sprite.svg';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToFavourites, removeFromFavourites } from 'redux/slice';
-import { selectFavourites } from 'redux/selectors';
+import { addToFavourites, removeFromFavourites } from '../../redux/slice';
+import { selectFavourites } from '../../redux/selectors';
 
 const CarItem = ({ car }) => {
   const [showModal, setShowModal] = useState(false);

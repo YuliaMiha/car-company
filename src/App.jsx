@@ -1,13 +1,13 @@
-import { SharedLayout } from 'components/SharedLayout';
-import { GlobalStyles } from 'GlobalStyles';
+import { SharedLayout } from './components/SharLayout';
+import { GlobalStyles } from './GlobalStyles';
 import { lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { getFilterValuesThunk } from 'redux/thunks';
+import { getFilterValuesThunk } from './redux/thunks';
 
-const Home = lazy(() => import('pages/HomePage'));
-const CarCatalog = lazy(() => import('pages/CarCatalog'));
-const FavouriteCatalog = lazy(() => import('pages/FavouriteCatalog'));
+const Home = lazy(() => import('./pages/HomePage'));
+const CarCatalog = lazy(() => import('./pages/CarCatalog'));
+const FavouriteCatalog = lazy(() => import('./pages/FavouriteCatalog'));
 
 export const App = () => {
   const dispatch = useDispatch();

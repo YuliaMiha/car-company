@@ -5,6 +5,7 @@
   "homepage": "https:/YuliaMiha.github.io/car-company/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,8 @@
     "@types/node": "^16.18.74",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "axios": "^1.6.5",
+    "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^6.1.6",
@@ -45,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

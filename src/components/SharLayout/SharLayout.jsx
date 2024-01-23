@@ -1,5 +1,5 @@
-import { Loader } from 'components/common/Loader';
-import { Navigation } from 'components/Navigation';
+import { Loader } from '../../components/common/Loader';
+import { Navigation } from '../Navigat';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ContentContainer, Header, Main } from './SharLayout.styled';
